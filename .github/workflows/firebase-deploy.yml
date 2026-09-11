@@ -12,4 +12,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_JJUZA }}'
           channelId: live
-          projectId: jjuzaCart
+          projectId: jjuzacart
