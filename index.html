@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launching Soon - Jjuza Cart</title>
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --primary-purple: #4B0082;
+            --accent-green: #7FFF00;
+            --text-main: #f0f6fc;
+            --text-muted: #8b949e;
+            --glass-bg: rgba(255, 255, 255, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            /* Use the specific purple background */
+            background-color: var(--primary-purple);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Background gradient overlay for depth */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(75, 0, 130, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+            pointer-events: none;
+        }
+
+        .container {
+            /* Glassmorphism effect */
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 50px 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 -5px 25px rgba(255, 255, 255, 0.05) inset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Logo Styling */
+        .logo-container {
+            margin-bottom: 30px;
+        }
+        
+        .logo-container img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--accent-green);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+        .cart-icon {
+            width: 120px;
+            height: auto;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));
+            /* Use accent green for the icon */
+        }
+        
+        .cart-icon path {
+            fill: var(--accent-green);
+        }
+
+        /* Specific adjustments to ensure the logo looks identical to image_10.png */
+        .logo-text-jjuza {
+            font-size: 34px;
+            font-weight: 900;
+            fill: var(--primary-purple); /* Purple text inside the cart */
+        }
+
+        .logo-subtext {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: -10px; /* Adjust position */
+            fill: var(--accent-green); /* Green subtext below cart */
+        }
+
+        /* Text Elements */
+        .headline {
+            color: var(--accent-green); /* Green for "Launching Soon" */
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .description {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        /* Contact Info Box */
+        .contact-box {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 35px;
+            width: 100%;
+            text-align: left;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .icon-svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--accent-green);
+        }
+
+        .contact-link {
+            color: var(--text-main);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .contact-link:hover {
+            color: var(--accent-green);
+        }
+
+        /* Footer */
+        .footer {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+            border-top: 1px solid var(--glass-border);
+            padding-top: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo-container">
+            <img src="logo.jpg" alt="">
+        </div>
+
+        <!-- Text Content -->
+        <h1 class="headline">Launching Soon</h1>
+        <p class="description">We are working hard behind the scenes to bring you an incredible shopping experience.</p>
+
+        <!-- Contact Info -->
+        <div class="contact-box">
+            <div class="contact-item">
+                <svg class="icon-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M493.4 24.6l-104-104c-9.4-9.4-24.6-9.4-33.9 0l-95.1 95.1c-9.4 9.4-9.4 24.6 0 33.9l41.1 41.1-58.5 58.5-41.1-41.1c-9.4-9.4-24.6-9.4-33.9 0L24.6 355.5c-9.4 9.4-9.4 24.6 0 33.9l104 104c9.4 9.4 24.6 9.4 33.9 0l95.1-95.1c9.4-9.4 9.4-24.6 0-33.9l-41.1-41.1 58.5-58.5 41.1 41.1c9.4 9.4 24.6 9.4 33.9 0l95.1-95.1c9.4-9.4 9.4-24.6 0-33.9z"/>
+                </svg>
+                <span><strong>Call / WhatsApp:</strong> <a href="tel:+256759173156" class="contact-link">+256 759 173156</a></span>
+            </div>
+            <div class="contact-item">
+                <svg class="icon-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.8 35.5 0 71.1-32.4 92.2-47.8 102-74.1 131.7-96.2 154.1-113.6zM256 160c22.4 0 46.6-6.9 70.7-24.2 64.4-46.5 92.8-69.8 154.2-114.9C491.3 8.7 502.3 16.8 502.3 31V64c0 7.4-4.1 14.1-10.7 17.6L256 215.4 19.7 81.6C13.1 78.1 9 71.4 9 64V31c0-14.2 11-22.3 21.1-14.1 61.3 45.1 89.8 68.4 154.2 114.9C209.4 153.1 233.6 160 256 160z"/>
+                </svg>
+                <span><strong>Email:</strong> <a href="mailto:jjuza2025@gmail.com" class="contact-link">jjuza2025@gmail.com</a></span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            &copy; 2026 Jjuza Cart Limited. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
